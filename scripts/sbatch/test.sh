@@ -15,10 +15,13 @@ PROJECT="$HOME/projects/nvflow"
 
 set -e
 
+# get the apptainer variables
 source $PROJECT/scripts/apptainer_vars.sh
 
+# move folder over so we are not overwriting the last run
 source $PROJECT/scripts/moves/test.sh
 
+# make the snakemake script executable by apptainer exec
 SCRIPT=$PROJECT/scripts/smk/test.sh
 chmod +x $SCRIPT
 

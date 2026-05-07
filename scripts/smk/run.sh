@@ -1,11 +1,13 @@
-# !/bin/bash
+#!/bin/bash
 
 SMKRUN="uv run snakemake \
   --cores 4  \
-  --configfile=smkconfig/apptainer_run.yaml \
+  --configfile=smkconfig/run.yaml \
   --keep-going"
 
-$SMKRUN graph_metrics_create_target
+$SMKRUN nvflow_graphs_create_target
 wait
 #
-$SMKRUN consolidate_target
+$SMKRUN nvflow_ambient_create_target
+$SMKRUN nvflow_metrics_consolidate_target
+$SMKRUN nvflow_qois_consolidate_target

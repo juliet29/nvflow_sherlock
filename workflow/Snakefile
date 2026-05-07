@@ -1,3 +1,14 @@
+from snakemake.utils import min_version
+min_version("6.0")
 
-include: "rules/common.smk"
-include: "rules/flow.smk"
+configfile: "/nvflow/smkconfig/test.yaml"
+
+nvflow_github = github("juliet29/nvflow", path="workflow/Snakefile", tag="s0.1.4")
+
+
+module nvflow: 
+  snakefile: nvflow_github
+  config: config
+
+
+use rule * from nvflow as nvflow_*
