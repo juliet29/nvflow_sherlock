@@ -1,7 +1,4 @@
-mv $SCRATCH/nvflow/run $SCRATCH/nvflow/run.$(date +%Y%m%d_%H%M%S).bak
-mkdir -p $SCRATCH/nvflow/run/intermed
-mkdir -p $SCRATCH/nvflow/run/shared
-
-# cp -r run.20260427_080836.bak/intermed/*/graphs run/intermed
+mv $SCRATCH/nvflow/run $SCRATCH/nvflow/run.$(date +%y%m%d_%H%m).bak
+mkdir -p $SCRATCH/nvflow/run
 
 echo "moved run folder over"
