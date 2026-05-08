@@ -1776,7 +1776,7 @@ wheels = [
 [[package]]
 name = "nvflow"
 version = "0.1.0"
-source = { git = "https://github.com/juliet29/nvflow?tag=s0.1.3#db572cd23c2068701c34dd2f03123a62a614beac" }
+source = { git = "https://github.com/juliet29/nvflow?tag=s0.1.5#0494b934c2c65a62756b7d2429510d5240c32552" }
 dependencies = [
     { name = "altair" },
     { name = "ipython" },
@@ -1806,7 +1806,7 @@ requires-dist = [
     { name = "altair", specifier = ">=6.0.0" },
     { name = "ipython", specifier = ">=9.12.0" },
     { name = "loguru", specifier = ">=0.7.3" },
-    { name = "nvflow", git = "https://github.com/juliet29/nvflow?tag=s0.1.3" },
+    { name = "nvflow", git = "https://github.com/juliet29/nvflow?tag=s0.1.5" },
     { name = "plyze", git = "https://github.com/juliet29/plyze?tag=s0.1.5" },
     { name = "snakemake", specifier = ">=9.19.0" },
     { name = "vl-convert-python", specifier = ">=1.9.0.post1" },

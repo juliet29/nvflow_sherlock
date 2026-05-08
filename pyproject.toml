@@ -23,4 +23,4 @@ build-backend = "uv_build"
 
 [tool.uv.sources]
 plyze = { git = "https://github.com/juliet29/plyze", tag = "s0.1.5" }
-nvflow = { git = "https://github.com/juliet29/nvflow", tag = "s0.1.4" }
+nvflow = { git = "https://github.com/juliet29/nvflow", tag = "s0.1.5" }

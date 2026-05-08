@@ -18,6 +18,7 @@ set -e
 
 source $PROJECT/scripts/apptainer_vars.sh
 
+# in the case of a failed run, may not want to move..
 source $PROJECT/scripts/moves/run.sh
 wait
 
@@ -26,4 +27,4 @@ chmod +x $SCRIPT
 
 apptainer exec --pwd $APPTAINER_PROJECT $BINDS $IMAGE $SCRIPT
 
-source $PROJECT/scripts/create_result_samples.sh
+source $PROJECT/scripts/copy.sh

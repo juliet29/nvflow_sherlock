@@ -3,7 +3,7 @@ min_version("6.0")
 
 configfile: "/nvflow/smkconfig/test.yaml"
 
-nvflow_github = github("juliet29/nvflow", path="workflow/Snakefile", tag="s0.1.4")
+nvflow_github = github("juliet29/nvflow", path="workflow/Snakefile", tag="s0.1.5")
 
 
 module nvflow: 
